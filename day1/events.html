@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intellect'24 Events</title>
+    <link rel="icon" href="../assets/logo.png">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="../assets/logo.png" alt="Logo" class="logo-img"> Intellect'24</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about-page">About</a></li>
+                <li><a href="../index.html#events-section">Events</a></li>
+                <li><a href="../index.html#sponsors-section">Sponsors</a></li>
+                <li><a href="../index.html#gallery-section">Gallery</a></li>
+                <li><a href="../index.html#contact-section">Contact</a></li>
+                <li><a href="../registration/registration.html" class="register-btn">Register</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Event Section -->
+<section id="events" class="event-section">
+    <h2>Explore Events</h2>
+
+    <!-- Filter Options -->
+    <div class="filter-options">
+        <div>
+            <input type="checkbox" id="tech-filter" class="filter-checkbox" checked>
+            <label for="tech-filter">Tech</label>
+        </div>
+        <div>
+            <input type="checkbox" id="non-tech-filter" class="filter-checkbox" checked>
+            <label for="non-tech-filter">Non-Tech</label>
+        </div>
+        <div>
+            <input type="text" id="search-bar" placeholder="Search events..." class="search-bar">
+        </div>
+    </div>
+
+    <!-- Event Cards Grid -->
+    <div id="event-cards" class="event-cards-grid">
+        <!-- Example Event Card -->
+        <div class="event-card tech">
+            <h3>AI Hackathon1</h3>
+            <p>Date: Oct 20, 2024 | Time: 10 AM</p>
+            <p class="description">Compete in teams to create AI-driven solutions.</p>
+            <button class="register-button">Register</button>
+        </div>
+        <div class="event-card non-tech">
+            <h3>Art Competition1</h3>
+            <p>Date: Oct 21, 2024 | Time: 1 PM</p>
+            <p class="description">Showcase your creativity and artistry in this non-tech event.</p>
+            <button class="register-button">Register</button>
+        </div>
+        <!-- Add more event cards here -->
+        <div class="event-card tech">
+            <h3>AI Hackathon2</h3>
+            <p>Date: Oct 20, 2024 | Time: 10 AM</p>
+            <p class="description">Compete in teams to create AI-driven solutions.</p>
+            <button class="register-button">Register</button>
+        </div>
+        <div class="event-card non-tech">
+            <h3>Art Competition2</h3>
+            <p>Date: Oct 21, 2024 | Time: 1 PM</p>
+            <p class="description">Showcase your creativity and artistry in this non-tech event.</p>
+            <button class="register-button">Register</button>
+        </div>
+        
+        <div class="event-card tech">
+            <h3>AI Hackathon3</h3>
+            <p>Date: Oct 20, 2024 | Time: 10 AM</p>
+            <p class="description">Compete in teams to create AI-driven solutions.</p>
+            <button class="register-button">Register</button>
+        </div>
+        <div class="event-card non-tech">
+            <h3>Art Competition3</h3>
+            <p>Date: Oct 21, 2024 | Time: 1 PM</p>
+            <p class="description">Showcase your creativity and artistry in this non-tech event.</p>
+            <button class="register-button">Register</button>
+        </div>
+        
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <button id="prev-page" class="pagination-button">Previous</button>
+        <span id="page-info">Page 1 of 2</span>
+        <button id="next-page" class="pagination-button">Next</button>
+    </div>
+</section>
+
+    <script src="events.js"></script>    
+
+    
+
+</body>
+</html>
