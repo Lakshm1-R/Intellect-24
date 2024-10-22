@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Intellect'24</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Intellect'24 Registration Form</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <input type="text" id="department" name="department" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year of Study</label>
+                <input type="text" id="year" name="year" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="collegeName">College Name</label>
+                <input type="text" id="collegeName" name="collegeName" required>
+            </div>
+            <div class="form-group">
+                <label for="collegeDistrict">College District</label>
+                <input type="text" id="collegeDistrict" name="collegeDistrict" required>
+            </div>
+            <div class="form-group">
+                <label for="participantType">Participant Type</label>
+                <select id="participantType" name="participantType" onchange="toggleEventOptions()" required>
+                    <option value="">Select</option>
+                    <option value="GCT">GCT</option>
+                    <option value="non-GCT">Non-GCT</option>
+                </select>
+            </div>
+
+            <div id="gctEvents" class="event-options hidden">
+                <h2>Choose Events (GCT)</h2>
+                <div class="form-group">
+                    <label for="gctDepartmentFilter">Filter by Department</label>
+                    <select id="gctDepartmentFilter" onchange="filterGctEvents()">
+                        <option value="all">All</option>
+                        <option value="Civil">Civil</option>
+                        <option value="IT">CSE / IT</option>
+                        <option value="Mech">Mech / Production</option>
+                        <option value="IBT">IBT</option>
+                        <option value="EEE">EEE / ECE / EIE</option>
+                        <option value="Non-Tech">Non-Tech</option>
+                    </select>
+                </div>
+                <div class="checkbox-group" id="gctCheckboxes">
+                    <!-- Add 15 event options for GCT -->
+                    <label><input type="checkbox" class="gctEvent" data-department="Mech" value="LINK SPHERE">LINK SPHERE</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="EEE" value="DIGIBYTE">DIGIBYTE</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="Civil" value="CIVITAS">CIVITAS</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="Civil" value="DESIGN HORIZON">DESIGN HORIZON</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="IT" value="DASH OF TRIVIA">DASH OF TRIVIA</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="Mech" value="Mr. WORKSHOP">Mr. WORKSHOP</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="IBT" value="QUIZSPIRE">QUIZSPIRE</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="IBT" value="IDEA EXCHANGE">IDEA EXCHANGE</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="Non-Tech" value="SHARK TANK">SHARK TANK</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="Non-Tech" value="SPEAKUP">SPEAKUP</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="IT" value="TECH TREK">TECH TREK</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="Mech" value="BUILDING (FORTIFY)">BUILDING (FORTIFY)</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="EEE" value="TECH NEX">TECH NEX</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="EEE" value="ELECTROGEN">ELECTROGEN</label>
+                    <label><input type="checkbox" class="gctEvent" data-department="IT" value="SPEC BUILD">SPEC BUILD</label>
+                </div>
+            </div>
+
+            <div id="nonGctEvents" class="event-options hidden">
+                <h2>Choose Events (Non-GCT)</h2>
+                <div class="vertical-group">
+                    <h3>Vertical A</h3>
+                    <label><input type="radio" name="nonGctEventA" value="Event A1"> Event A1</label>
+                    <label><input type="radio" name="nonGctEventA" value="Event A2"> Event A2</label>
+
+                    <h3>Vertical B</h3>
+                    <label><input type="radio" name="nonGctEventB" value="Event B1"> Event B1</label>
+                    <label><input type="radio" name="nonGctEventB" value="Event B2"> Event B2</label>
+
+                    <h3>Vertical C</h3>
+                    <label><input type="radio" name="nonGctEventC" value="Event C1"> Event C1</label>
+                    <label><input type="radio" name="nonGctEventC" value="Event C2"> Event C2</label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="qrCode">Payment QR Code</label>
+                    <img src="./images/QRcode.jpg" alt="Payment QR Code" id="qrCode" style="width: 100%; max-width: 300px;">
+                </div>
+                
+                <div class="form-group">
+                    <label for="transactionId">Transaction ID</label>
+                    <input type="text" id="transactionId" name="transactionId">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
