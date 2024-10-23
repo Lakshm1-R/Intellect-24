@@ -117,7 +117,7 @@
     padding-right: 20px;
     background-color: #111;
     color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     overflow: auto;
     height: 100%;
     width: 100%;
@@ -148,7 +148,7 @@
 .event-cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 40px;
+    gap: 80px;
 }
 
 .event-card {
@@ -157,12 +157,44 @@
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px gold;
 }
 
 .event-card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.event-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: gold;
+    text-shadow: 2px 2px 5px red;
+}
+
+.event-tagline {
+    font-size: 16px;
+    color: #faea0a;
+    margin-bottom: 20px;
+}
+
+.round h4 {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #f3a010;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 5px;
+    text-align: left;
 }
 
 .register-button {
@@ -174,6 +206,7 @@
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
 .register-button:hover {
