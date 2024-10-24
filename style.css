@@ -134,7 +134,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0, 0, 0, 0.668); 
+    background: rgba(0, 0, 0, 0.838); 
     border-radius: 15px; 
     padding: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
@@ -144,6 +144,10 @@ body {
 
 .welcome-text {
     margin-bottom: 30px;
+}
+
+.welcome-text h1, .welcome-text h3 {
+    color: gold;
 }
 
 .club-logo {
@@ -182,6 +186,10 @@ h2 {
 .buttons {
     display: flex;
     gap: 20px;
+}
+
+.buttons * {
+    height: 100%;
 }
 
 .btn {
