@@ -81,3 +81,13 @@ burger.addEventListener('click', () => {
 
     burger.classList.toggle('toggle');
 });
+// Close the menu after a link is clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('nav-active');
+        burger.classList.remove('toggle');  // Also toggle back the burger icon
+
+        // Clear animations when a link is clicked
+        navLinks.forEach(link => link.style.animation = '');
+    });
+});
