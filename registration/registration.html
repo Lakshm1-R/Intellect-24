@@ -33,91 +33,57 @@
     <div class="container">
         <h1>Register for Intellect'24</h1>
 
-        <form id="form-data" name="form-data" action="https://script.google.com/macros/s/AKfycbwYCGUDKSD6XunZx_s13M0tDVgCvZt5zvk1fESQ5z_6BUx8HgZ_LhRxsUXL0mPTSeh-Kg/exec" method="POST">
-            <!-- Participant Information -->
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="department">Department:</label>
-            <input type="text" id="department" name="department" required>
-
-            <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="college">College:</label>
-            <div class="radio-group">
-                <label><input type="radio" id="gct" name="college" value="GCT" required> GCT</label>
-                <label><input type="radio" id="other" name="college" value="Other College" required> Other College</label>
-            </div>
-
-            <!-- GCT Event Options -->
-            <div id="gct-events" class="event-group">
-                <h3>Events for GCT Participants:</h3>
-
-                <!-- Tech Category -->
-                <h4>Tech Events</h4>
-                <label><input type="checkbox" name="events[]" value="GCT-Tech-Event1"> GCT Tech Event 1</label><br>
-                <label><input type="checkbox" name="events[]" value="GCT-Tech-Event2"> GCT Tech Event 2</label>
-
-                <!-- Non-Tech Category -->
-                <h4>Non-Tech Events</h4>
-                <label><input type="checkbox" name="events[]" value="GCT-Non-Tech-Event1"> GCT Non-Tech Event 1</label><br>
-                <label><input type="checkbox" name="events[]" value="GCT-Non-Tech-Event2"> GCT Non-Tech Event 2</label>
-
-                <!-- Fun Category -->
-                <h4>Fun Events</h4>
-                <label><input type="checkbox" name="events[]" value="GCT-Fun-Event1"> GCT Fun Event 1</label><br>
-                <label><input type="checkbox" name="events[]" value="GCT-Fun-Event2"> GCT Fun Event 2</label>
-            </div>
-
-            <!-- Non-GCT-specific Events and Payment -->
-            <div id="non-gct-events" class="event-group">
-                <h3>Event Verticals for Non-GCT Participants:</h3>
-
-                <!-- Vertical A -->
-                <h4>Vertical A:</h4>
-                <label><input type="checkbox" name="events[]" value="Non-GCT-VerticalA-Event1"> Event A1</label><br>
-                <label><input type="checkbox" name="events[]" value="Non-GCT-VerticalA-Event2"> Event A2</label>
-
-                <!-- Vertical B (tech and non-tech categories) -->
-                <h4>Vertical B:</h4>
-                <label><input type="radio" name="vertical-b" value="tech" class="category-radio"> Tech</label>
-                <label><input type="radio" name="vertical-b" value="non-tech" class="category-radio"> Non-Tech</label>
-
-                <div id="vertical-b-tech" class="category-options">
-                    <label><input type="checkbox" name="events[]" value="Non-GCT-VerticalB-Tech-Event1"> Vertical B Tech Event 1</label><br>
-                    <label><input type="checkbox" name="events[]" value="Non-GCT-VerticalB-Tech-Event2"> Vertical B Tech Event 2</label>
-                </div>
-
-                <div id="vertical-b-non-tech" class="category-options">
-                    <label><input type="checkbox" name="events[]" value="Non-GCT-VerticalB-NonTech-Event1"> Vertical B Non-Tech Event 1</label><br>
-                    <label><input type="checkbox" name="events[]" value="Non-GCT-VerticalB-NonTech-Event2"> Vertical B Non-Tech Event 2</label>
-                </div>
-
-                <!-- Vertical C (conditional on B's choice) -->
-                <h4>Vertical C:</h4>
-                <div id="vertical-c-tech" class="category-options">
-                    <label><input type="checkbox" name="events[]" value="Non-GCT-VerticalC-Tech-Event1"> Vertical C Tech Event 1</label><br>
-                    <label><input type="checkbox" name="events[]" value="Non-GCT-VerticalC-Tech-Event2"> Vertical C Tech Event 2</label>
-                </div>
-
-                <div id="vertical-c-non-tech" class="category-options">
-                    <label><input type="checkbox" name="events[]" value="Non-GCT-VerticalC-NonTech-Event1"> Vertical C Non-Tech Event 1</label><br>
-                    <label><input type="checkbox" name="events[]" value="Non-GCT-VerticalC-NonTech-Event2"> Vertical C Non-Tech Event 2</label>
-                </div>
-
-                <!-- Payment Section -->
-                <h3>Payment for Non-GCT Participants</h3>
-                <p>Send the fee to UPI ID: <strong>akileshak2004-1@oksbi</strong></p>
-                <img src="./images/QRcode.jpg" alt="UPI Payment QR Code" class="qr-code">
-            </div>
-
-            <!-- Submit Button -->
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfn948x5cnNGgdVDbhtRkCLdCkMVcHBH_tal14gFL2avuu6Hg/formResponse" target="_self" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve CEkLOc" data-shuffle-seed="-8773286974627833353" data-clean-viewform-url="https://docs.google.com/forms/d/e/1FAIpQLSfn948x5cnNGgdVDbhtRkCLdCkMVcHBH_tal14gFL2avuu6Hg/viewform" data-response="%.@.]" data-dlp-data="%.@.null,false]" data-first-entry="0" data-last-entry="7" data-is-first-page="true">
+      
+            <!-- Email -->
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="entry.118821203" required>
+      
+            <!-- Name -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="entry.171351966" required>
+      
+            <!-- College Name -->
+            <label for="college-name">College Name</label>
+            <input type="text" id="college-name" name="entry.1519140118" required>
+      
+            <!-- Department -->
+            <label for="department">Department</label>
+            <input type="text" id="department" name="entry.1918345754" required>
+      
+            <!-- Mobile Number -->
+            <label for="mobile">Mobile Number</label>
+            <input type="text" id="mobile" name="entry.1795372521" pattern="^(91)?\d{10}$" title="Enter a valid mobile number" required>
+      
+            <!-- Year of Study -->
+            <label>Year of Study</label>
+            <select name="entry.1354496791" required>
+              <option value="II">II</option>
+              <option value="III">III</option>
+            </select>
+      
+            <!-- Transaction ID -->
+            <label for="transaction">Registration Transaction ID</label>
+            <input type="text" id="transaction" name="entry.733331796" required>
+      
+            <!-- Session 1 Choice -->
+            <label>Session 1</label>
+            <input type="radio" name="entry.13954014" value="SharkTank" required> SharkTank
+      
+            <!-- Session 2 Choice -->
+            <label>Session 2</label>
+            <input type="radio" name="entry.1258840798" value="Slide O Vert" required> Slide O Vert
+            <input type="radio" name="entry.1258840798" value="Tech Trek" required> Tech Trek
+            <input type="radio" name="entry.1258840798" value="Electrogen" required> Electrogen
+      
+            <!-- Session 3 Choice -->
+            <label>Session 3</label>
+            <input type="radio" name="entry.122816496" value="Civitas" required> Civitas
+            <input type="radio" name="entry.122816496" value="Comtronics" required> Comtronics
+            <input type="radio" name="entry.122816496" value="Mr. Workshop" required> Mr. Workshop
+      
             <button type="submit">Submit</button>
-        </form>
+          </form>
     </div>
     <script src="registration.js"></script> 
 </body>
