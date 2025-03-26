@@ -17,3 +17,12 @@ Intellect'24 is a dynamic 5-day technical festival organized to foster innovatio
 ✅ Interactive Gallery: Showcases highlights and memorable moments from the event.
 
 ✅ Contact Information: Provides easy access to organizers for queries and support.
+
+## 🛠️ Tech Stack  
+- **HTML** – Structuring the webpage  
+- **CSS** – Styling for an elegant look  
+- **JavaScript** – Adding interactivity  
+
+## 🚀 Live Demo  
+🔗 **[Intellect'24 Website](https://yscintellect-24.netlify.app/)**  
+
